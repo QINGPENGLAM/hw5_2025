@@ -142,8 +142,9 @@ also need a second selector.*/
     /*step17 not space between*/
     .nav_links{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;  /* Ensures even spacing */
+    width: 100%;  /* Makes sure the nav fills the available space */
     }
     /*step18 its not 3 column*/
     .pricing {
@@ -151,9 +152,11 @@ also need a second selector.*/
         flex-wrap: wrap;
         align-items: flex-end;  
         justify-content: center;
+        
     }
     /*step19*/
     .card {
+        display: flex;
         border: 2px solid #45ADDD; 
         flex-basis: 325px;         
     }
