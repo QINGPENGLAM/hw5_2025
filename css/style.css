@@ -36,7 +36,7 @@ header{
 
 /* Step 5 Style the links so that they have the same color even after they have been visited. This is a “challenge” problem. You should not give or receive help when completing it. */
 a, a:visited {
-    color: #000000;
+    color: blue;
 }
 
 
@@ -139,21 +139,28 @@ also need a second selector.*/
         /*step16*/
         background-image: none;
     }
-    /*step17 not space between*/
-    .nav_links{
-        display: flex;
-    flex-direction: row;
-    justify-content: space-around;  /* Ensures even spacing */
-    width: 100%;  /* Makes sure the nav fills the available space */
+    /*step17 */
+    nav{
+        width: 100%;
     }
-    /*step18 its not 3 column*/
+    .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
     .pricing {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: flex-end;  
-        justify-content: center;
+    }
+    /*step20 display word gallery*/
+    .gallery {
+        display: none;
+    }
+    #gallery{
         
     }
+    
     /*step19*/
     .card {
         display: flex;
@@ -161,9 +168,7 @@ also need a second selector.*/
         flex-basis: 325px;         
     }
     /*step20*/
-    .gallery{
-        display: none;
-    }
+
     .card ul li:nth-child(2)::after {
         content: "\1F44D";  
     }
