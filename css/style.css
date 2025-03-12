@@ -148,10 +148,19 @@ also need a second selector.*/
     flex-direction: row;
     justify-content: space-around;
     }
+    /*step18*/
     .pricing {
         display: flex;
         flex-wrap: nowrap;
         align-items: flex-end;  
+    }
+    
+    
+    /*step19*/
+    .card {
+        display: flex;
+        border: 2px solid #45ADDD; 
+        flex-basis: 325px;         
     }
     /*step20 display word gallery*/
     .gallery {
@@ -160,14 +169,7 @@ also need a second selector.*/
     #gallery{
         display: none;
     }
-    
-    /*step19*/
-    .card {
-        display: flex;
-        border: 2px solid #45ADDD; 
-        flex-basis: 325px;         
-    }
-    /*step20*/
+    /*step21*/
 
     .card ul li:nth-child(2)::after {
         content: "\1F44D";  
