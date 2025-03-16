@@ -116,6 +116,7 @@ also need a second selector.*/
         flex-wrap: wrap;
         justify-content: center;
     }
+    /*step13*/
     body > header {
         position: sticky;
         top: 0;
@@ -124,22 +125,21 @@ also need a second selector.*/
     }
 }
 /* The logo should appear but not be animated if prefers-reduced-motion is selected in the accessibility preferences.  */
-@media (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: reduce) {
     #logo {
         animation: none; 
         width: 475px;    
         opacity: 1;      
     }
 }
-/* step 15 Change the font on your body to Arial with a backup value of  Helvetica */
 @media print {
     body {
-        /*step15*/
+        /*step15 change font of body to Arial with backup value of Helvetica*/
         font-family: Arial, Helvetica;  
-        /*step16*/
+        /*step16 remove background image*/
         background-image: none;
     }
-    /*step17 */
+    /*step17 edit nav and nav_link so space between according to image provided*/
     nav{
         width: 100%;
     }
@@ -148,7 +148,7 @@ also need a second selector.*/
     flex-direction: row;
     justify-content: space-around;
     }
-    /*step18*/
+    /*step18 Edit the pricing class so that the elements align along the bottom.*/
     .pricing {
         display: flex;
         flex-wrap: nowrap;
@@ -156,40 +156,22 @@ also need a second selector.*/
     }
     
     
-    /*step19*/
+    /*step19 card element with solid border 2px of #45ADDD and use flex-basis of 325px. */
     .card {
         display: flex;
         border: 2px solid #45ADDD; 
         flex-basis: 325px;         
     }
-    /*step20 display word gallery*/
+    /*step20 hide gallery section*/
     .gallery {
         display: none;
     }
     #gallery{
         display: none;
     }
-    /*step21*/
+    /*step21 add thumbs up entity as shown in card without using list-style-type*/
 
     .card ul li:nth-child(2)::after {
         content: "\1F44D";  
     }
 }
-
-
-/* step 16 The background image should be removed.  */
-
-
-/* step 17 Edit the nav/nav_links elements so that they are spaced according to the image above. */
-
-
-/* step 18 Edit the pricing class so that the elements align along the bottom.  As long as it aligns along the bottom we don't care if the cards aren't the same height. */
-
-
-/* step 19 The card elements should have a solid border 2px of #45ADDD and use flex-basis of 325px.  */
-
-
-/* step 20 No part of the gallery should be visible. */
-
-/* 
-step 21 Without using list-style-type add the thumbs up entity as shown in the cards. This is a challenge problem. You should not give or receive help when completing it.**For some people the thumbs up is not printing as yellow. That is fine. */
